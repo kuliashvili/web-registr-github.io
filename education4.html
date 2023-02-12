@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/education4.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+    <title>Page fourth</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="left">
+            <header class="header">
+                <button id="header-back-button22" class="header-back-button2">
+                    <img class="header-back-button2-item" src="img/backbutton.png" alt="backbutton">
+                </button>
+                <div class="header-up">
+                    <div class="header-title">ᲒᲐᲜᲐᲗᲚᲔᲑᲐ</div>
+                    <div class="div header-page-number">3/3</div>
+                </div>
+
+                <div class="line">
+                    <img class="line-item" src="img/line2.png" alt="line2">
+                </div>
+            </header>
+
+
+
+
+
+            <form class="form">
+                <div class="position">
+                    <div class="position-item">
+                        <div class="position-item-header">სასწავლებელი</div>
+                        <input id="position-item-input1" class="position-item-input 1" type="text" placeholder="სასწავლებელი">
+                        <img id="done" src="img/done.png" alt="done" class="done">
+                        <p class="position-item-info">მინიმუმ 2 სიმბოლო</p>
+                    </div>
+                    <div id="zdarova" class="1">zd</div>
+
+                </div>
+
+                <div class="start-end">
+
+                    <div class="start">
+                        <div class="start-header">ხარისხი</div>
+                        <!-- <input class="start-input" type="text" placeholder="აირჩიეთ ხარისხი"> -->
+                        <div class="dropdown 1">
+                            <input id="text-box" class="text-box 1" type="text" placeholder="აირჩიეთ ხარისხი" readonly>
+                            <div class="options 1">
+                                <div class="1" id="vai" onclick="show('საშუალო სკოლის დიპლომი')">საშუალო სკოლის დიპლომი</div>
+                                <div class="1" onclick="show('ზოგადსაგანმანათლებლო დიპლომი')">ზოგადსაგანმანათლებლო დიპლომი</div>
+                                <div class="1" onclick="show('ბაკალავრი')">ბაკალავრი</div>
+                                <div class="1" onclick="show('მაგისტრი')">მაგისტრი</div>
+                                <div class="1" onclick="show('დოქტორი')">დოქტორი</div>
+                                <div class="1" onclick="show('ასოცირებული ხარისხი')">ასოცირებული ხარისხი</div>
+                                <div class="1" onclick="show('სტუდენტი')">სტუდენტი</div>
+                                <div class="1" onclick="show('კოლეჯი (ხარისხის გარეშე)')">კოლეჯი (ხარისხის გარეშე)</div>
+                                <div class="1" onclick="show('სხვა')">სხვა</div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+                    </div>
+                    <div class="end">
+                        <div class="end-header">დამთავრების რიცხვი</div>
+                        <!-- <input class="end-input" type="text" placeholder="mm / dd / yyyy"> -->
+                        <p><input class="end-input 1" type="text" id="datepicker4" placeholder="mm / dd / yyyy"></p>
+                        <button class="end-date-button">
+                        <img class="end-date-button-img" src="img/date.png" alt="date">
+                        </button>
+
+                    </div>
+
+
+                </div>
+
+                <div class="description">
+                    <p class="description-text">აღწერა</p>
+                    <textarea class="description-textarea 1" id="description-textareazzz" cols="30" rows="10" placeholder="როლი თანამდებობაზე და ზოგადი აღწერა"></textarea>
+                </div>
+                <div class="secondline">
+                    <img class="secondline-item" src="img/secondline.png" alt="secondline">
+                </div>
+
+            </form>
+
+
+            <button id="page3next" class="page3next">ᲓᲐᲡᲠᲣᲚᲔᲑᲐ</button>
+
+            <button id="addexperienceschool" class="addexperience"> <p class="addexperience-text">სხვა სასწავლებლის დამატება</p> </button>
+
+            <button id="page3back" class="page3back">ᲣᲙᲐᲜ</button>
+
+
+
+            <div id="addmoreschool" class="addmoreschool">
+                <div class="left">
+
+
+
+
+                    <form class="form">
+                        <div class="position1">
+                            <div class="position-item">
+                                <div class="position-item-header">სასწავლებელი</div>
+                                <input class="position-item-input 1" type="text" placeholder="სასწავლებელი">
+                                <p class="position-item-info">მინიმუმ 2 სიმბოლო</p>
+                            </div>
+
+                        </div>
+
+                        <div class="start-end">
+                            <div class="start">
+                                <div class="start-header1">ხარისხი</div>
+                                <!-- <input class="start-input" type="text" placeholder="აირჩიეთ ხარისხი"> -->
+                                <div class="dropdown1">
+                                    <input class="text-box1 1" type="text" placeholder="აირჩიეთ ხარისხი" readonly>
+                                    <div class="options1">
+                                        <div onclick="show1('საშუალო სკოლის დიპლომი')">საშუალო სკოლის დიპლომი</div>
+                                        <div onclick="show1('ზოგადსაგანმანათლებლო დიპლომი')">ზოგადსაგანმანათლებლო დიპლომი</div>
+                                        <div onclick="show1('ბაკალავრი')">ბაკალავრი</div>
+                                        <div onclick="show1('მაგისტრი')">მაგისტრი</div>
+                                        <div onclick="show1('დოქტორი')">დოქტორი</div>
+                                        <div onclick="show1('ასოცირებული ხარისხი')">ასოცირებული ხარისხი</div>
+                                        <div onclick="show1('სტუდენტი')">სტუდენტი</div>
+                                        <div onclick="show1('კოლეჯი (ხარისხის გარეშე)')">კოლეჯი (ხარისხის გარეშე)</div>
+                                        <div onclick="show1('სხვა')">სხვა</div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+
+                            </div>
+                            <div class="end">
+                                <div class="end-header">დამთავრების რიცხვი</div>
+                                <!-- <input class="end-input" type="text" placeholder="mm / dd / yyyy"> -->
+                                <p><input class="end-input 1" type="text" id="datepicker4" placeholder="mm / dd / yyyy"></p>
+                                <button class="end-date-button">
+                            <img class="end-date-button-img" src="img/date.png" alt="date">
+                            </button>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="description">
+                            <p class="description-text">აღწერა</p>
+                            <textarea class="description-textarea 1" id="description-textarea" cols="30" rows="10" placeholder="როლი თანამდებობაზე და ზოგადი აღწერა"></textarea>
+                        </div>
+                        <div class="secondline">
+                            <img class="secondline-item" src="img/secondline.png" alt="secondline">
+                        </div>
+
+                    </form>
+
+
+
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+        <div class="right">
+            <div class="right-image">
+                <img class="right-image-item" src="img/star.png" alt="star">
+            </div>
+
+            <div class="right-inner">
+
+
+                <div class="right-info">
+                    <div class="right-info1">
+                        <div class="right-info11">
+                            <div id="right-info-name" class="right-info-name 1"></div>
+                            <div id="right-info-surname" class="right-info-surname"></div>
+                        </div>
+
+                        <div class="right-info-email">
+                            <img id="right-info-email-img" class="right-info-email-img" src="img/email.png" alt="emailimg">
+                            <div id="right-info-email-item" class="right-info-email-item"></div>
+                        </div>
+                        <div class="right-info-number">
+                            <img id="right-info-number-img" class="right-info-number-img" src="img/mobile.png" alt="number">
+                            <div id="right-info-number-item" class="right-info-number-item"> </div>
+                        </div>
+                    </div>
+                    <div class="right-info2">
+                        <div id="right-info-header" class="right-info-header 1">ᲩᲔᲛ ᲨᲔᲡᲐᲮᲔᲑ</div>
+                        <div id="right-info-text" class="right-info-text"></div>
+                        <img id="right-info-img" class="right-info-img" src="img/line2.png" alt="line3">
+                    </div>
+                </div>
+
+
+                <div class="right-experience">
+                    <div class="right-experience1">
+                        <div id="right-experience-header" class="right-experience-header">ᲒᲐᲛᲝᲪᲓᲘᲚᲔᲑᲐ</div>
+
+                        <div class="ori">
+                            <div id="right-experience-jobs" class="right-experience-jobs"></div>
+                            <div id="right-experience-employer" class="right-experience-employer"></div>
+
+                        </div>
+                        <div class="ori1">
+                            <div id="right-experience-data" class="right-experience-data"></div>
+                            <div id="right-experience-data1" class="right-experience-data1"></div>
+                        </div>
+
+
+                    </div>
+                    <div class="right-experience2">
+                        <div id="right-experience-text" class="right-experience-text"></div>
+
+                        <img id="right-experience-img" class="right-experience-img" src="img/line2.png" alt="line4">
+                    </div>
+                </div>
+
+
+                <div class="right-knowledge">
+                    <div class="right-knowledge1">
+                        <div id="right-knowledge-header" class="right-knowledge-header">ᲒᲐᲜᲐᲗᲚᲔᲑᲐ</div>
+                        <div class="ragac">
+                            <div id="right-knowledge-place" class="right-knowledge-place"></div>
+                            <div id="right-knowledge-quality" class="right-knowledge-quality 1"></div>
+                        </div>
+
+                        <div id="right-knowledge-date" class="right-knowledge-date"></div>
+                    </div>
+                    <div class="right-knowledge2">
+                        <div id="right-knowledge-text" class="right-knowledge-text"></div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+        <script src="js/education4.js"></script>
+        <script src="js/resume5.js"></script>
+        <script src="js/rightside.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/resume5.css">
+    <a href="experience3.html"></a>
+    <a href="education4.html"></a>
+    <a href="index.html"></a>
+    <a href="personal-info2.html"></a>
+
+
+    <title>Page Fifth</title>
+</head>
+
+
+
+<body>
+
+
+
+    <container class="container">
+        <button id="header-back-button2" class="header-back-button2">
+            <img class="header-back-button2-item" src="img/backbutton.png" alt="backbutton">
+        </button>
+
+
+
+
+        <div class="resume">
+            <div class="resume-item">
+                <div class="right-inner">
+
+
+                    <div class="right-info">
+                        <div class="right-info1">
+                            <div class="right-info11">
+                                <div id="right-info-name" class="right-info-name 1"></div>
+                                <div id="right-info-surname" class="right-info-surname"></div>
+                            </div>
+
+                            <div class="right-info-email">
+                                <img id="right-info-email-img" class="right-info-email-img" src="img/email.png" alt="emailimg">
+                                <div id="right-info-email-item" class="right-info-email-item"></div>
+                            </div>
+                            <div class="right-info-number">
+                                <img id="right-info-number-img" class="right-info-number-img" src="img/mobile.png" alt="number">
+                                <div id="right-info-number-item" class="right-info-number-item"> </div>
+                            </div>
+                        </div>
+                        <div class="right-info2">
+                            <div id="right-info-header" class="right-info-header 1">ᲩᲔᲛ ᲨᲔᲡᲐᲮᲔᲑ</div>
+                            <div id="right-info-texttt" class="right-info-texttt"></div>
+                            <img id="right-info-img" class="right-info-img" src="img/line2.png" alt="line3">
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+                    <img id="userimage9" class="1" src="img/person.png" />
+
+
+
+                    <button id="id-button1">ატვირთვა</button>
+
+                    <script>
+                        // Get the button and image elements
+                        const uploadButton = document.getElementById("id-button1");
+                        const userImage1 = document.getElementById("userimage9");
+
+                        // Add a click event listener to the button
+                        uploadButton.addEventListener("click", function() {
+                            // Create a file input element
+                            const fileInput = document.createElement("input");
+                            fileInput.type = "file";
+
+                            // Add a change event listener to the file input
+                            fileInput.addEventListener("change", function() {
+                                // Get the selected file
+                                const file = fileInput.files[0];
+
+                                // Create a URL object for the file
+                                const url = URL.createObjectURL(file);
+
+                                // Set the image src to the URL
+                                userImage1.src = url;
+                            });
+
+                            // Trigger the file input to open
+                            fileInput.click();
+                        });
+                    </script>
+
+                    <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+                    <div class="right-experience">
+                        <div class="right-experience1">
+                            <div id="right-experience-header" class="right-experience-header">ᲒᲐᲛᲝᲪᲓᲘᲚᲔᲑᲐ</div>
+                            <div class="gaertianeba">
+                                <div id="right-experience-jobs" class="right-experience-jobs"></div>
+                                <div id="right-experience-place" class="right-experience-place"></div>
+                            </div>
+                            <div class="kidevgaertianeba">
+                                <div id="right-experience-data" class="right-experience-data"></div>
+                                <div id="right-experience-data1" class="right-experience-data1"></div>
+                            </div>
+
+                        </div>
+                        <div class="right-experience2">
+                            <div id="right-experience-text" class="right-experience-text"> </div>
+
+                            <img id="right-experience-img" class="right-experience-img" src="img/line2.png" alt="line4">
+                        </div>
+                    </div>
+
+
+                    <div class="right-knowledge">
+                        <div class="right-knowledge1">
+                            <div id="right-knowledge-header" class="right-knowledge-header">ᲒᲐᲜᲐᲗᲚᲔᲑᲐ</div>
+                            <div class="shekrebamesame">
+                                <div id="right-knowledge-place" class="right-knowledge-place"></div>
+                                <div id="right-knowledge-quality1" class="right-knowledge-place1">საშუალო სკოლის დიპლომი</div>
+                            </div>
+
+                            <div id="right-knowledge-date" class="right-knowledge-date"></div>
+                        </div>
+                        <div class="right-knowledge2">
+                            <div id="right-knowledge-text" class="right-knowledge-text"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+
+            <img class="star" src="img/star.png" alt="star">
+        </div>
+
+
+
+
+        <div id="notification" class="notification">
+            <div class="notification-item">
+                <div class="notification-item-text"> <img class="notification-item-img" src="img/text.png" alt="text"> <img id="close" class="close" src="img/x.png" alt="close"></div>
+            </div>
+        </div>
+    </container>
+
+
+
+    <script src="js/resume5.js"></script>
+    <script src="js/experience3.js"></script>
+    <script src="js/education4.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/personal-info2.js"></script>
+    <script src="js/rightside.js"></script>
+</body>
+
+</html>
